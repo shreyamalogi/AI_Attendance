@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" id="heading" href="{{ url_for('home') }}">Attendance System</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav ms-auto">
+      <li >
+        <a class="nav-link" href="{{ url_for('student') }}" style="padding-right: 20px;
+          padding-left: 20px;">Student</a>
+      </li>
+      {% if user.is_authenticated %}
+      <li>
+        <div id="dropdown1" class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Upload Feed</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="{{ url_for('up_img') }}">Photo/Video</a>
+            <a class="dropdown-item" href="{{ url_for('video_cam') }}">Start Webcam</a>
+        </div>
+        </div>
+      </li>
+      
+        <li >
+          <div id="dropdown1" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="{{ url_for('register_student') }}">Register Student</a>
+              <a class="dropdown-item" href="{{ url_for('register', num=0) }}">Register Teacher</a>
+              <a class="dropdown-item" href="{{ url_for('register', num=1) }}">Register Admin</a>
+          </div>
+          </div>
+        </li>
+        
+        <li >
+          <div id="dropdown1" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dates</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="{{ url_for('start') }}">Semester Dates</a>
+              <a class="dropdown-item" href="{{ url_for('add_holi') }}">Holiday Dates</a>
+          </div>
+          </div>
+        </li>
+        <li >
+          <div id="dropdown1" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attendance</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="{{ url_for('view_att') }}">View Attendance</a>
+              <a class="dropdown-item" href="{{ url_for('edit_att') }}">Edit Attendance</a>
+          </div>
+          </div>
+        </li>
+        <li >
+          <a class="nav-link" href="{{ url_for('logout') }}" style="padding-right: 20px;
+            padding-left: 20px;">Logout</a>
+        </li>
+      {% else %}
+        <li >
+          <a class="nav-link" href="{{ url_for('home') }}" style="padding-right: 20px;
+            padding-left: 20px;">Login</a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>

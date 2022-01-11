@@ -1,0 +1,381 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 350%;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 250%;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+
+#footer-contact {
+  color: #8f8f8f;
+}
+
+#title {
+  background-image: url("https://designmodo.com/wp-content/uploads/2017/08/gradient-1.jpg");
+  color: white;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+.row{
+  background-color: #393E46;
+  padding: 3%;
+}
+
+/* navbar */
+.navbar {
+  background-color: #191A19;
+  padding: 0.8%;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #7C83FD;
+  font-size: 250%;
+}
+#heading{
+  color: #BBBBBB;
+}
+.nav-item {
+  padding: 0 0.125%;
+}
+
+.nav-link {
+  font-size: 150%;
+  font-family: 'Montserrat';
+  font-weight: normal;
+}
+
+.row{
+  background: rgba(0, 0, 0, 0);
+  padding: 10%;
+}
+
+.login-buttons{
+  padding: 2%;
+  margin-top: 10%;
+  margin-right: 7%;
+  border-color: #AAD8D3;
+}
+.dropdown{
+  margin-top: 0.5rem;
+}
+.dropdown-menu{
+  background-color: #191A19;
+}
+
+/* for mobile */
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 200%;
+    line-height: 1.5;
+    padding-bottom: 25%;
+  }
+  .container-fluid{
+    padding: 20%;
+  }
+  .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    color: #7C83FD;
+    font-size: 200%;
+  }
+  #footer{
+    margin: 0;
+    padding: 10%;
+    text-align: center;
+    background-color: #393E46;
+  }
+}
+
+/* Footer */
+#footer{
+  margin: 0;
+  text-align: center;
+  background-color: #393E46;
+}
+.fa-2x{
+  padding-bottom: 2%;
+  padding-right: 1%;
+  color: #D8E3E7;
+}
+.fa-2x:hover{
+  color: #AAD8D3;
+}
+.contact{
+  padding-top: 3%;
+  padding-bottom: 1%;
+  margin: 0;
+}
+
+.btn-secondary {
+  background-color:#191A19;
+  border-color: #191A19;
+  color: rgba(255,255,255,.5);
+  font-family: "Montserrat",sans-serif;
+  font-size: 137.5%;
+  padding: 0 12px;
+}
+.dropdown-item{
+  background-color:#191A19;
+  color: #ffff;
+}
+.dropdown-item:hover{
+  background-color: #AAD8D3;
+}
+
+
+.form-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto auto;
+	padding: 50px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 500px;
+	height: 430px;
+}
+.form-box:before {
+	background-image: url("https://designmodo.com/wp-content/uploads/2017/08/gradient-1.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	filter: blur(2px);
+}
+.form-box .header-text {
+	font-size: 34px;
+	font-weight: 600;
+	padding-bottom: 0px;
+	text-align: center;
+}
+.form-box input {
+	margin: 22px 0px;
+	border: none;
+	padding: 15px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+.form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.form-box label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #ddd;
+}
+.form-box button {
+
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+
+/* login */
+#login_name{
+  color:white ;
+}
+
+/* Register */
+.file-submit{
+  margin-bottom: 5%;
+}
+
+/* Semester-dates  And Holiday Dates*/
+
+#start-body{
+  background-image: url("https://designmodo.com/wp-content/uploads/2017/08/gradient-1.jpg");
+  /* radial-gradient(circle, #9849c2, #757be7, #58a2fa, #5fc3ff, #8be0ff); */
+}
+
+.start-date{
+  margin: 1%;
+}
+.start-submit{
+  padding-left: 5%;
+  margin-top: 5%;
+  padding-right: 5%;
+
+}
+#start{
+  padding: 0.75%;
+  margin-right: 3%;
+}
+
+.end-date{
+  margin: 3%;
+}
+.start-container{
+  text-align: center;
+}
+
+.dates-font{
+  margin-right: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #dfe9e9;
+  font-size: 1.5rem;
+}
+.number-periods{
+  margin-top: 5%;
+  color: #dfe9e9;
+}
+.semester-font{
+  margin-top: 5%;
+  margin-right: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #EEEEEE;
+  font-size: 3.5rem;
+}
+
+/* upload photo/video */
+.a{
+  color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250%;
+
+}
+.b{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 350%;
+  font-weight: bold;
+  margin-bottom: 7%;
+  margin-top: 3%;
+}
+
+.class-dropdown{
+  font-size: 175%;
+}
+.class-menu{
+  background-color: #D8E3E7;
+}
+.class-item{
+  font-size: 200%;
+  color: black;
+  background-color: #D8E3E7;
+  border-color: #D8E3E7;
+  padding: 0;
+}
+.bg{
+  background: #393E46;
+background-image: radial-gradient(circle, #07baeb, #00a9ce, #0097b2, #008598, #0b747f);
+font-size: 145%;
+}
+
+.row1{
+  text-align: center;
+
+}
+#bt{
+  background-color: #393E46;
+  font-size: 145%;
+  color: #fff;
+  margin-top: 10%;
+  padding: 1% 5%;
+}
+#bt:hover{
+background-color: #fff;
+color: #393E46;
+}
+
+#my-file{
+  color: #fff;
+  font-size: 175%;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 35%;
+  margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
